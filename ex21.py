@@ -16,4 +16,9 @@ print("Another way like Puzzle")
 hemwwy = add(age ,substract(height, age))
 print(f" Tha becomes:", hemwwy, "You got it?")
 
-print("Lerewe push kra bo git hub")
+print("""
+Lerewe push kra bo github
+git add .
+git commit -m "Second Commit"
+git push origin master
+""")
