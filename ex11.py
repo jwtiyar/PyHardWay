@@ -1,0 +1,15 @@
+print("How old Are you?")
+age = input()
+print("How tall are you?", end='')
+height = input()
+print("How much do you weught?", end='')
+wieght = (input())
+print(f"So, your are {age} old, {height} and {wieght} heavy.")
+
+print(f"Lets start new Interview")
+print(f"Whats your profession?")
+profession = input()
+print(f"Where fo you live?")
+live = (input())
+
+print(f"So your profession is {profession}, And live in {live}")

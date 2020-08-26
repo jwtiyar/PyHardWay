@@ -1,0 +1,5 @@
+age = input("How old are you? ")
+print(age)
+height = input("How tall are you ? ")
+weight = input("How much do you weight? ")
+print("So youre {} old, {} is your height, And your weight is {}".format(age, height,weight))
