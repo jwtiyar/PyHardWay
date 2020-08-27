@@ -4,7 +4,7 @@ def print_all(f): #Lera her shtek dabney abe, yan pesh ewe penasey value ka bkay
     print(f.read())
 
 def rewind(f):
-    print(f.seek(0))
+    print(f.seek(20)) #Lera wtman le naw perrey test.txt 20 bcho peshewe enja nwsynakan pyshasn bde. ew jmareye be dlly xot bgorre.
 
 def print_a_line(line_count, f):
     print(line_count, f.readline())

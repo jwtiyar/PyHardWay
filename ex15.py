@@ -16,7 +16,7 @@ print(txt_again.read())
 txt.close()
 txt_again.close()
 
-#Eme xpm nwsywme be bekarhenany tenha input bo testy xom:
+#Eme xom nwsywme be bekarhenany tenha input bo testy xom:
 print("Type file name: ")
 nawyfile = input()
 text = open(nawyfile)
