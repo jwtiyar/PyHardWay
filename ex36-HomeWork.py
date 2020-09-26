@@ -1,6 +1,8 @@
-from sys import exit
+from sys import exit #exit bo daxstne le excute w derchwn
 from sys import argv
+
 script, naw = argv
+
 print("Sllaw {} yaryeke dest pe dekat".format(naw))
 
 def jwreke():
@@ -45,13 +47,14 @@ def Jwry_Beramber():
     if kame == 1:
         print("Jwrekey tr mawe le pesht, Alttwny zort dewe yan kem?")
         dyarykrdn = input("> ")
-        if dyarykrdn == "kem":
+        # le if w elif dw shewazm bekarhenawa bo nardny value. herdwky debet.
+        if dyarykrdn == "kem": 
             print("Pyroze ALttwneket brdewe, bLema zor nye xot bzane chende")
         elif "zor" in dyarykrdn:
             print("Pyroze brreky zor alltwnt bo derchw, Teqyt")
         else:
-            print("Detwanyt hewll bdeytewe")
-    elif kame == 2:
+            exit(0)
+    elif kame == 2: 
         print("To Shanseket bogene")
         mrdn("Yekser dechyte derewe w hych bedest naheneyt")
     
@@ -63,16 +66,16 @@ def Jwry_Beramber():
         elif "kem" in dyarykrdn or "keme" in dyarykrdn:
             mrdn("Temaht nye boye ewe hallte")
         else:
-            mrdn("Debet nemenyt, zor negbety, BYE!")
-            exit(0)
+            exit(0) #Her katek else hy4 swdkey nebw karygery nebw leser kodeke detwany exit(0) dabney
     else:
         mrdn("brro bo chem")
-        exit(0)
+        
+
 def mrdn(bochy):
     print(bochy, "Serkewtw byt berrezm! Eger nemrdbety")
     exit(0)
 
-def kotay_yaryeke():
-    print("Yaryeke kotay hat berrez {}".format(naw))
+def kotayi_yaryeke():
+    print("Yaryeke kotayi hat berrez {} Detwanyt dwwbare hewll bdeytewe".format(naw))
 jwreke()
-kotay_yaryeke()
+kotayi_yaryeke()
