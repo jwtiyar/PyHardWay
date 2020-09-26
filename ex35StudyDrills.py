@@ -1,4 +1,7 @@
 from sys import exit
+from sys import argv
+script, naw = argv
+print("Sllaw {} yaryeke dest pe dekat".format(naw))
 
 def jwreke():
     print("Lem jwrewe destpedekeyt")
@@ -68,4 +71,8 @@ def Jwry_Beramber():
 def mrdn(bochy):
     print(bochy, "Serkewtw byt berrezm! Eger nemrdbety")
     exit(0)
+
+def kotay_yaryeke():
+    print("Yaryeke kotay hat berrez {}".format(naw))
 jwreke()
+kotay_yaryeke()
