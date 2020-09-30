@@ -20,7 +20,7 @@ else:
 
 for word in urlopen(WORD_URL).readlines():
     WORDs.append(str(word.strip(), encoding="utf-8"))
-
+#strip bekardet bo labrdny hemw boshayyyek le pesh w dway string eke.
 def convert(snippet, phrase):
     class_names = [w.capitalize() for w in random.sample(WORDs, snippet.count("%%%"))]
     other_names = random.sample(WORDs, snippet.count("***"))
@@ -28,7 +28,9 @@ def convert(snippet, phrase):
     param_names = []
 
     for i in range(0, snippet.count("@@@")):
+        #count jmarey ew carane dedat ke wshekey tya baskrawa yan drawa
         param_count = random.randint(1,3)
+        # bekardet bo pyshandany jmareyeky random ke dekret herdwkyany tya bet we etwany dyraybkey chon destpebkat (start, stop) yan step.
         param_names.append(', '.join(random.sample(WORDs, param_count)))
     for sentence in snippet, phrase:
         result = sentence[:]
