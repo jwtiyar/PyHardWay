@@ -1,8 +1,6 @@
-from sys import argv
 
-script, filename = argv
 
-txt = open(filename)
+txt = open(test.txt)
 
 print(f"here is your file {filename}")
 print(txt.read())
