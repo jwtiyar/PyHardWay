@@ -196,6 +196,13 @@ class Map(object):
         return val
     def opening_scene(self):
         return self.next_scene(self.start_scene)
+
+class  Engine(object):
+    def __init__(self, scene_map):
+        self.start_map = start_map
+
+    def play(self):
+        
         
 
 a_map = Map('central_corridor')
