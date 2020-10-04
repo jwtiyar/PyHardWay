@@ -8,27 +8,27 @@ class Dog(Animal):
         # class dog has-a name
         self.name = name
     # Cat is-a Animal
-class Cat(Anima):
-    def __init__(self, name)
+class Cat(Animal):
+    def __init__(self, name):
     # cat has-a name
-    self.name = name 
+        self.name = name 
 
 #Person is-a object
 class Person(object):
-    def __init__(self, name)
+    def __init__(self, name):
     # Person has-a name
-    self.name = name 
+        self.name = name 
 
     #Person has-a a pet of some kind
-    self.pet = None
+        self.pet = None
 
 #Employee is-a person
 class Employee(Person):
     def __init__(self, name, salary):
     # Employee has-a name, Be Manay employee nawy haya ka wary(inherits) grtwa la person we.
-    super(Employee, self).__init__(name)
+        super(Employee, self).__init__(name)
     # Employee has-a salary
-    self.salary = salary
+        self.salary = salary
 
 # class fish is-a object
 class fish(object):
