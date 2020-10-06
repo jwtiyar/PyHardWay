@@ -43,7 +43,7 @@ print(dev_1.email)
 print(dev_2.email)
 print(dev_1.pay) # Lere nrxeke nagorret
 dev_1.apply_raise()
-print(dev_1.pay) # lere nrxeke gorra chwnke apply condition ynweman krdwe.
+print(dev_1.pay) # lere nrxeke gorra chwnke apply condition nweman krdwe.
 print(dev_1.pro_lang)
 
 manager1 = Manager("Sue", "Adam", 90000, [dev_1])
@@ -65,7 +65,3 @@ print(issubclass(Manager, Employee))
 print(issubclass(Developer, Employee))
 print(issubclass(Employee, Developer))
 print(issubclass(Employee, Manager))
-
-
-
-
